@@ -76,7 +76,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     {
         var issuer = builder.Configuration["Jwt:Issuer"];
         var audience = builder.Configuration["Jwt:Audience"];
-        var key = builder.Configuration["Jwt:SigninKey"];
+        var key = builder.Configuration["Jwt:SigningKey"];
 
         options.TokenValidationParameters = new TokenValidationParameters
         {
